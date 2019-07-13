@@ -28,8 +28,8 @@ describe Squasher::Config do
       config.stub_dbconfig do
         File.open(File.join(fake_root, 'config', 'database.yml')) do |stream|
           content = YAML.load(stream.read)
-          expect(content["development"]["database"]).to eq("squasher")
-          expect(content["development"]["encoding"]).to eq("utf-8")
+          expect(content["squasher"]["database"]).to eq("squasher")
+          expect(content["squasher"]["encoding"]).to eq("utf-8")
           expect(content).not_to have_key("another_development")
         end
       end

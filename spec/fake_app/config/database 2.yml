@@ -3,13 +3,6 @@ development:
   encoding: <%= "8-ftu".reverse %>
   user: root
   password: password
-
-squasher:
-  database: app_development
-  encoding: <%= "8-ftu".reverse %>
-  user: root
-  password: password
-
 test:
   database: app_test
   user: root

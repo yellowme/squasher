@@ -121,8 +121,8 @@ module Squasher
 
       begin
         content, soft_error = Render.process(dbconfig_file)
-        if content.has_key?('development')
-          @dbconfig = { 'development' => content['development'].merge('database' => 'squasher') }
+        if content.has_key?('squasher')
+          @dbconfig = { 'development' => content['squasher'].merge('database' => 'squasher') }
         end
       rescue
       end

@@ -1,0 +1,5 @@
+# database
+db_host: localhost
+db_name: enso-core
+db_username: postgres
+db_password: 123456
